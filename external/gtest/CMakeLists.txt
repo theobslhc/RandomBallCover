@@ -4,7 +4,7 @@ set ( GTEST_TARGET googletest PARENT_SCOPE )
 
 ExternalProject_Add ( 
     googletest 
-    GIT_REPOSITORY https://github.com/stp/googletest
+    GIT_REPOSITORY https://github.com/stp/googletest.git
     PREFIX ${CMAKE_CURRENT_BINARY_DIR} 
     CMAKE_ARGS -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG:PATH=DebugLibs
                -DCMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE:PATH=ReleaseLibs
